@@ -6,11 +6,13 @@ verify_ssl = false
 [dev-packages]
 
 [packages]
-flask-api-resource = "==0.1.1"
+flask-api-resource = "==0.1.2"
 flask = "==1.1.1"
 flask-sqlalchemy = "==2.4.1"
 flask-migrate = "==2.5.2"
 environs = "==5.2.0"
+pymysql = "*"
+pydantic = "*"
 
 [requires]
 python_version = "3.7"

@@ -11,6 +11,8 @@ class BaseConfig:
     DEBUG = ENV_TYPE == 'dev'
     SECRET_KEY = env.str('SECRET_KEY')
     SQLALCHEMY_DATABASE_URI = env.str('SQLALCHEMY_DATABASE_URI')
+    SQLALCHEMY_TRACK_MODIFICATIONS = env.bool('SQLALCHEMY_TRACK_MODIFICATIONS')
+    INSTALL_APPS = ['mfm.user']
 
 
 class DevConfig(BaseConfig):
